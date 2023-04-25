@@ -2,6 +2,12 @@ fun main(){
     val vowel= listOf<String>("a","e","i","o","u")
     println(analyzeString("absolutely amazing"))
     println(isPasswordValid("Chris@99!Absalom"))
+    println(printMultiples())
+    val accountNumber="1234567890"
+    val accountName="Anne Christine"
+    val balance=50000000000000000
+    println("Account number $accountNumber with balance $balance is operated by $accountName")
+
 }
 
 
