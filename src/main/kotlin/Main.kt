@@ -5,9 +5,9 @@ fun main(){
     println(printMultiples())
     val accountNumber="1234567890"
     val accountName="Anne Christine"
-    val balance=50000000000000000.90
+    val balance=50000000000000000
     println("Account number $accountNumber with balance $balance is operated by $accountName")
-    println(SavingsAccount("Anne Christine",50000000,450000.9))
+    println(SavingsAccount("1234567890","Anne Christine",50000000.9,450000))
 
 }
 
@@ -91,7 +91,7 @@ class CurrentAccount(val accountNumber: String, val accountName: String, var bal
 //number of withdrawals is less than 4 for it to allow one to withdraw money
 //from the account. It also increments the withdrawals attribute after a
 //successful withdrawal (6pts)
-class SavingsAccount(val accountNumber: String, val accountName: Int, var balance: Double, var withdrawals: Int = 0) {
+class SavingsAccount(val accountNumber: String, val accountName: String, var balance: Double, var withdrawals: Int = 0) {
     fun deposit(amount: Double) {
         balance += amount
     }
